@@ -166,6 +166,46 @@ console.log(hh);
 
 
 
+//task 7 
+//random otp
+
+
+const arr = [ 1,2,3,4,5,6,7,8,9,0]
+
+function otp(){
+    for(let i=0 ; i<=3 ; i++){
+      let a = (Math.random()*arr.length) // Random function, picks an item from the array and returns it as a float value. So we need to convert float to int ,  and the stps are  following :
+      let int = Math.floor(a);  //converting float to int
+      console.log(int);
+
+    }
+  
+}
+
+ otp();
+
+
+//task 8
+//countdown timer
+
+
+function count(eventdate){
+    let currentdate = new Date();
+    console.log(currentdate);
+    let eventdatee = new Date(eventdate) ; 
+    console.log(eventdatee);
+
+    const daysRemaining = Math.ceil(
+        ((eventdatee - currentdate) / (1000 * 60 * 60 * 24))
+      );
+    console.log(daysRemaining);
+}
+
+
+
+const eventdate ="2023-08-31" ;
+
+count(eventdate);
 
 
 
