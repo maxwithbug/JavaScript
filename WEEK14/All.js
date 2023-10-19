@@ -176,8 +176,8 @@ const products = {
 
 function print(){
     console.log("Below are the product details.");
-for (let keys of Object.keys(products)) {
-  console.log(`${keys} : ${products[keys]}`);
+for (let key of Object.keys(products)) {
+  console.log(`${key} : ${products[key]}`);
 }
 }
 
