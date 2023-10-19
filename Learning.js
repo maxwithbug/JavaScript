@@ -76,5 +76,36 @@ function  cal(name) {
 cal.call(student);
 
 
+// lets try to access var out side 
+function nhe (){
+    cool = 999 ;
+   
+   function qqq() {
+       
+        coool =111;
+   }
+   
+   
+   qqq();
+  
+   return coool
+   }
+   let hh = nhe();
+   console.log(cool);
+   console.log(hh);
+
+
+  //if a is false so it will not work 
+let a = true ;
+if(a==true){
+   dd= 199 ;
+}
+console.log(dd);
+
+
+for(let s = 0 ; s<2 ; s++){
+   kkk = 333; 
+}
+console.log(kkk);
 
 

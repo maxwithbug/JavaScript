@@ -170,7 +170,41 @@ console.log(hh);
 
 
 
+//tak9
+function check(hunu){
+    let pre = new Set();
+    for( let char of hunu){
+        if(pre.has(char)){
+            console.log("boom bam");
+            return 1 ; 
+        }
+        pre.add(char);
+    }
+    console.log("The input string contains only unique characters.");
+    return 0 ; 
+}
+check("sumann")
 
+
+//task 10 
+
+function check (box){
+    let spli = box.split(/\s+/)
+    console.log(spli);
+
+    for(let sp of spli){
+        let count = 0 ;
+       for(let s of sp){
+        count = count+1;
+        
+       }
+        console.log(` ${sp} has ${count} char`);
+    }
+}
+
+
+let box = "i am noob baby"; 
+check(box);
 
 
 
