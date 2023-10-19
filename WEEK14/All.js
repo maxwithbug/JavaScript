@@ -165,6 +165,25 @@ let hh = typeof gueststring === "string";
 console.log(hh);
 
 
+//task 6 
+
+const products = {
+    name : "apple macbook m1",
+    prize :"100000",
+    color :"space gray ",
+    storage:"256gb ssd",
+};
+
+function print(){
+    console.log("Below are the product details.");
+for (let keys of Object.keys(products)) {
+  console.log(`${keys} : ${products[keys]}`);
+}
+}
+
+print.call(products);
+
+
 
 //task 7 
 //random otp
@@ -203,7 +222,7 @@ function count(eventdate){
 
 
 
-const eventdate ="2023-08-31" ;
+const eventdate ="2023-10-29" ;
 
 count(eventdate);
 

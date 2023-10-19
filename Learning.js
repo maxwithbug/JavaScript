@@ -109,3 +109,55 @@ for(let s = 0 ; s<2 ; s++){
 console.log(kkk);
 
 
+//task 6 
+
+const products = {
+    name : "apple macbook m1",
+    prize :"100000",
+    color :"space gray ",
+    storage:"256gb ssd",
+  };
+  
+  function print(){
+    console.log("Below are the product details.");
+  
+  let test = Object.values(products);
+  console.log(test);
+  let test2 = Object.keys(products);
+  console.log(test2);
+
+  //task 6 
+
+const products = {
+    name : "apple macbook m1",
+    prize :"100000",
+    color :"space gray ",
+    storage:"256gb ssd",
+  };
+  
+  function print(){
+    console.log("Below are the product details.");
+  
+  let test = Object.values(products);
+  console.log(test);
+  let test2 = Object.keys(products);
+  console.log(test2);
+  
+  for (let keys in Object(products)){
+    console.log(`keys ${keys}`);
+    //for(let value in Object.values(products)){
+    for(let value in test){
+      // console.log("value" , value);
+      console.log(`${keys}:${value}`);
+    }
+   
+  }
+  
+  
+  for (let keys of Object.keys(products)) {
+  console.log(`${keys} : ${products[keys]}`);
+  }
+  }
+  
+  print.call(products);
+  
