@@ -114,30 +114,30 @@ if (!user){
 cal("sumannn");
 
 //task 4 
-const products =[
-    {name :"laptop",price:"120000"},
-    {name :"mobile",price:"70000"},
-    {name :"laptop bag",price:"20000"},
-    {name :"watch",price:"20000"},
-    {name :"mobile charger",price:"1500"},
-    
+let products = [
+    {name: "laptop", price: "120000"},
+    {name: "mobile", price: "70000"},
+    {name: "laptop bag", price: "20000"},
+    {name: "watch", price: "20000"},
+    {name: "mobile charger", price: "1500"},
 ];
 
-function maxmin (call){
-    // console.log(arguments);
-    // let arr = Array.from(arguments);
-    // console.log(arr);
-    
-    for(let i = 0 ; i<products.length;i++){
-        console.log(products[i].price); //getting the price by (.) , we are accessing the object with (.)
+let max = { name: "", price: 0 };
+let min = { name: "", price: Number.MAX_VALUE};
+
+for(item of products){
+    let priceNumber = parseInt(item.price); // Convert string to number
+
+    if(priceNumber < min.price){
+        min = item;
     }
-    
+    if(priceNumber > max.price){
+        max = item;
+    }
 }
 
-//borrowing fun the funn is global
-maxmin.call(products);
-
-
+console.log(`the maximum price product is ${max.name}  at ${max.price}`);
+console.log(`the minimum price product is ${min.name}  at ${min.price}`);
 
 
 
