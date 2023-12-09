@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM3</title>
+</head>
+<body>
+    <div id="pdiv">
+        <p id="first">first paragraph</p>
+        <p id="second">second paragraph</p>
+        <p id="third">third paragraph</p>
+    </div>
+
+    <script>
+        const parent = document.getElementById('pdiv')
+
+        const firstpara = parent.firstChild
+        const secondpara = firstpara.nextSibling
+        const lastpara = parent.lastChild
+        console.log('first para ',firstpara)
+        console.log('sec para ',secondpara)
+        console.log('last para ',lastpara)
+
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events in dom</title>
+</head>
+<body>
+    events
+    <button id="fbutton">click me </button>
+
+
+    <script>
+        //adding event (normally bubble phase a thake event , amra chaile capture phase ao korte pari)
+        const fbutton = document.getElementById('fbutton');
+        fbutton.addEventListener('click' , handleclick , {once : true})  //if we want one time click then use {once:ture}
+
+
+        //making handle click
+        function handleclick(){
+            alert('button clicked ')
+        }
+
+        //**(vvi)we have to Remove the event after its execution. If we not the huge amount of events in our website and for the millions of users, the Java script memory will be full of events and there is a chance to (memory leak in javascript ).
+        setTimeout(function(){
+            fbutton.removeEventListener('click',handleclick)
+        },3000)  //3000ms = 3sec
+
+        
+
+
+
+
+    </script>
+</body>
+</html>

@@ -27,7 +27,7 @@ const  student ={
 }
 
 function upgrade(newgrade){
-     student.grade=newgrade;
+    student.grade=newgrade;
         console.log(student);
 }
 
@@ -149,7 +149,6 @@ let fmap = new Map()
         }
         
 
-    
 
 
     add( 2 , "meow" , 40  ,"babay@gmail.com")

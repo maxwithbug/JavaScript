@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title</title>
+        <style> 
+            #body{
+                height: 100vh;
+            }
+            .darkm{
+                background-color: black;
+                color: white;
+            }
+        </style>
+</head>
+<body id="body">
+    <h1 id="title">DOM selector </h1>
+        <p id="paragrapph">hello baby </p>
+        <span id="span">hehe</span>
+            <ol>
+                <li class="listitem">item 1</li>
+                <li class="listitem">item 2</li>
+                <li class="listitem">item 3</li>
+                <li class="listitem">item 4</li>
+            </ol>
+
+<script>
+    console.log(document.getElementById('paragrapph'))
+    console.log(document.getElementById('span'))
+
+    const darkmode = document.getElementById('body')
+        darkmode.addEventListener('click',() =>{
+            darkmode.classList.toggle('darkm')
+        })
+
+
+    const listitem = document.getElementsByClassName('listitem')
+    console.log(listitem)
+</script>
+</body>
+</html>
