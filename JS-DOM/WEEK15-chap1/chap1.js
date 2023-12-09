@@ -62,14 +62,14 @@ counttt(nomb);
 
 // trak 4
 
-const nomb = {
+const nooomb = {
     job :"SDE3",
     place : "Google",
     year :"2022",
     exprience :"5 years"
 }
 
-function check(nomb , chimta){
+function check(nooomb , chimta){
     let sett  = new Set()
 
         for (keys in  nomb){
@@ -87,7 +87,7 @@ function check(nomb , chimta){
 
     }
 
-check(nomb ,"job")
+check(nooomb ,"job")
 
 
 

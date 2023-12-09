@@ -1,0 +1,40 @@
+.m-box{
+    background-color: aquamarine;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7eff5;
+}
+.mainbox{
+    text-align: center;
+}
+.mainbox h2{
+    background-color: #222;
+    color: #e7eff5;
+    padding: 20px;
+    border: 10px;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.color{
+    color: rgb(24, 109, 178);
+    font-size: 20px;
+}
+.btn{
+    background-color: transparent;
+    padding: 10px;
+    border: 2px solid #222;
+    outline: none;
+    cursor: pointer;
+    margin-left: 20px;
+
+}
+.btn:hover{
+    background-color: #222;
+    color: #e7eff5;
+    transition: all 0.2s ease-in-out;
+}
