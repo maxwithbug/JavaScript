@@ -1,0 +1,31 @@
+.body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.select{
+    display: flex;
+
+}
+.select h4{
+    margin-left: 20px;
+}
+.inputtt{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+#image{
+    border: 2px solid black;
+    height: 500px;
+    width: 500px;
+}
+
+.image{
+    border: 2px solid black;
+    height: 500px;
+    width: 500px;
+
+}
