@@ -1,0 +1,19 @@
+.maindiv{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.the-box{
+    height: 60px;
+    width: 180px;
+    border: 2px solid black;
+    
+}
+.the-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+}

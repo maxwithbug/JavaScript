@@ -5,27 +5,25 @@
 
 .select{
     display: flex;
+    align-items: center;
+    
 
 }
 .select h4{
     margin-left: 20px;
 }
-.inputtt{
-    background: rgb(131,58,180);
+input{
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     color: white;
     outline: none;
     cursor: pointer;
+    height: 30px;
 }
-#image{
-    border: 2px solid black;
-    height: 500px;
-    width: 500px;
+button{
+    height: 30px;
 }
-
 .image{
     border: 2px solid black;
-    height: 500px;
+    height: 300px;
     width: 500px;
-
 }

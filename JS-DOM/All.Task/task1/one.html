@@ -10,13 +10,20 @@
     <h1 style="font-family: monospace;">Uplode your profile photo</h1>
 
     <div class="select">
-        <input type="file" value="select file" class="inputtt" id="inputtt"> 
-        <h4 style="font-family: monospace;"> status text</h4>
+        <!-- <input type="file" value="select file" class="input">  -->
+        <input type="file" id="imageUrlInput">
+        <button onclick="change()">Display Image</button>
+        <h4 style="font-family: monospace;" class="status"> Currently no data Available </h4>
     </div>
 
     <h2 style="font-family: monospace;">your profile picture</h2>
-    <img src="" alt="No profile picture" id="image">
-    <div class="image"></div>
+    <div class="image">
+        <img class="img" alt="">
+    </div>
+
+
+
+
 
 
     <script src="./one.js"></script>

@@ -1,0 +1,15 @@
+/* testting with creating a varible image linnk */
+:root{
+    --imagelink :"https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdhbGxwYXBlciUyMDRrfGVufDB8fDB8fHww" ;
+}
+.imagestyle{
+    height: 400px;
+    width: 600px;
+    border: 2px solid black;
+    margin-top: 20px;
+    /* background-image: url(
+        var(--imagelink)
+    ); */
+    background-image: url("https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdhbGxwYXBlciUyMDRrfGVufDB8fDB8fHww");
+
+}
