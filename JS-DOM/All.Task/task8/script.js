@@ -58,6 +58,6 @@ h3tag.textContent = houreformat
 
 //setting the value in background
 document.body.style.backgroundColor = hex
-window.location.reload()
+window.location.reload() //for continue changing color
 
 },1000)

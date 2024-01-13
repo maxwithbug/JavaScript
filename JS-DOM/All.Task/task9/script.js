@@ -17,7 +17,7 @@ function checking() {
     if(auth === "true"){
         h1.innerText = "User is loged in "
         maindiv.appendChild(h1)
-        // window.location.reload()
+        
     }
     if(auth === "false"){
         h1.innerText = "User is loged out "
