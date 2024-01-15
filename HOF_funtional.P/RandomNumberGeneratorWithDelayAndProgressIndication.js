@@ -1,4 +1,4 @@
-let delaytime = 110
+let delaytime = 3000
 
 //random no. generator 
 setInterval(() => {
