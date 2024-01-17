@@ -8,7 +8,7 @@ function manipulatestring(item , fun)
 
 
 let result = manipulatestring("hello World!" , logString)
-console.log(resu);
+console.log(result);
 
 //callback function
 function logString(item)
