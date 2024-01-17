@@ -1,7 +1,4 @@
 
-
-
-
 //higher orfer function
 function manipulatestring(item , fun)
 {
@@ -18,6 +15,5 @@ function logString(item)
 {
     return (`manipulated string is ${item}`)
 }
-
 
 
