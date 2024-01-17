@@ -20,4 +20,3 @@ fetchdata()
         
         console.log(combine);
     })
-
