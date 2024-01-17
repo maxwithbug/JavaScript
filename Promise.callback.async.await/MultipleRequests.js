@@ -1,33 +1,23 @@
-function fetchData() {
-    let p = new Promise((resolve, reject) => {
-        fetch('https://jsonplaceholder.typicode.com/todos/1')
-            .then(response => {
-                if (!response.ok) {
-                    // Log response body for debugging
-                    response.text().then(body => {
-                        console.error(`Failed to fetch data. Status Code: ${response.status}, Response Body: ${body}`);
-                        reject(new Error(`Failed to fetch data. Status Code: ${response.status}`));
-                    });
-                } else {
-                    return response.json();
-                }
-            })
-            .then(data => {
-                resolve(data);
-                console.log('Fetch successful:', p);
-            })
-            .catch(error => {
-                reject(error);
-            });
-    });
+function fetchdata()
+{
+    let todo = fetch("https://jsonplaceholder.typicode.com/todos/1")
+    .then(Response=>{
+        return Response.json() //normal
+    })
+    let postd = fetch("https://jsonplaceholder.typicode.com/posts/1")
+    .then(Response=>Response.json()) //one liner 
 
-    return p;
+    
+    return Promise.all([todo,postd])  //promise.all expect any kind of iterable as it's argument so we are using [] to make a array of promises {returns after  promises to be resolved}
 }
 
-fetchData()
-    .then(result => {
-        console.log(result);
+fetchdata()
+    .then(([one,two])=>{        //this [] is for making it itarable 
+        let combine ={
+            todo : one,
+            postdata : two
+        }
+        
+        console.log(combine);
     })
-    .catch(error => {
-        console.error('Error:', error.message);
-    });
+
