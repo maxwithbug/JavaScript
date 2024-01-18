@@ -60,12 +60,8 @@ console.log(snowy.dogbreed);
 
 
 
-
-
-
-
-
-
+//--constructor--
+//you can't access properties with out making a constructor function (using new keyword)
 
 function Persone2(name,age) {
     this.name = name
@@ -74,6 +70,43 @@ function Persone2(name,age) {
         console.log(`hello ${this.name}  and his age is ${this.age}`);
     }
 }
-
+// let ritu =  Persone2("rahul",21) [you need to un-comment this line to understand]
+// ritu.greet()
 let suman = new Persone2("suman",20)
 suman.greet()
+
+//--steps of how new keyword works
+/*
+step 1
+    new keyword makes a empty object (new - {}) 
+step 2
+    assign prototype to the object 
+step 3 
+    binding {this} to the prototype 
+step 4 
+    returns new object{}
+
+*/
+
+
+
+
+//--factory function--
+/*It's nothing just writing style for constructor(in this case, 
+    we don't have to use {new keyword} to access properties )
+
+*/
+
+function cb(name ,height){
+    return{
+        myyname : name,
+        myyheight : height ,
+        greet : function(){
+            console.log(`hello ${this.myyname} height ${this.myyheight}`);
+        }
+    }
+}
+
+let meow = cb("meow",5.9)
+meow.greet()
+
