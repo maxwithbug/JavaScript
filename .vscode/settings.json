@@ -1,7 +1,8 @@
 {
-    "editor.fontFamily": "'Cascadia Code' , Roboto Mono, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "jetBrains Mono,'Cascadia Code' , Roboto Mono, Menlo, Monaco, 'Courier New', monospace",
     "editor.codeLensFontFamily": " Cascadia Code ,Roboto Mono",
     "terminal.integrated.fontFamily": " meslolgs nf",
     "chat.editor.fontFamily": "IBM Plex Mono,Roboto Mono",
-    "editor.inlayHints.fontFamily": "Roboto Mono"
+    "editor.inlayHints.fontFamily": "Roboto Mono",
+    "editor.fontLigatures": true
 }
