@@ -28,7 +28,7 @@ class Ractangle extends Shape{
         return this.height*this.width
     }
     Calculateparameter(){
-        return 2*(this.height*this.width)
+        return 2*(this.height+this.width)
     }
 
 }
@@ -44,13 +44,13 @@ class Triangle extends Shape{
 
     }
     Calculatearea(){
-        const s = (this.a+this.b+this.c+this.d+this.e)/2
+        const s = (this.a+this.b+this.c)/2 //+this.d+this.e)
         return Math.sqrt(
-            (s-this.a)*(s-this.b)*(s-this.c)*(s-this.d)*(s-this.e)
+            (s*(s-this.a)*(s-this.b)*(s-this.c)) //(s-this.d)*(s-this.e)
         )
     }
     Calculateparameter(){
-        return this.a+this.b+this.c+this.d+this.e
+        return this.a+this.b+this.c//+this.d+this.e
     }
 
 }
