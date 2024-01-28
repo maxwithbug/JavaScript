@@ -34,23 +34,20 @@ class Ractangle extends Shape{
 }
 //sub class(triangle)
 class Triangle extends Shape{
-    constructor(a,b,c,d,e){
+    constructor(base,height,side1,side2,side3){
         super()
-        this.a = a 
-        this.b = b
-        this.c = c 
-        this.d = d
-        this.e = e
+        this.base = base 
+        this.height = height
+        this.side1 = side1 
+        this.side2 = side2
+        this.side3 = side3
 
     }
     Calculatearea(){
-        const s = (this.a+this.b+this.c)/2 //+this.d+this.e)
-        return Math.sqrt(
-            (s*(s-this.a)*(s-this.b)*(s-this.c)) //(s-this.d)*(s-this.e)
-        )
+        return 0.5*this.base*this.height
     }
     Calculateparameter(){
-        return this.a+this.b+this.c//+this.d+this.e
+        return this.side1+this.side2+this.side3
     }
 
 }
