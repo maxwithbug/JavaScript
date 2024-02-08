@@ -43,3 +43,4 @@ console.log(`products, added sucessfully`);
 console.log(inventory.item);
 
 inventory.deleteproduct('laptop')
+

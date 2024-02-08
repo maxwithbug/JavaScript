@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #id{
+            background-color: ;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>oy</li>
+        <li>oyo</li>
+        <li>he</li>
+        <li>hehe</li>
+    </ul>
+
+
+    <h1>title sec</h1>
+    <p id="id"></p>
+
+    <h2 id="h2"></h2>
+    <button id="button" onclick="AnotherEventfun()">Do you want to know my disicion for you  </button>
+<script>
+
+
+//part3(click)
+    
+    document.addEventListener('click',()=>{  //adding 'click' event to the hole window by (document) (when you click anywhere in the screen it will work)
+        document.getElementById('id').innerText = 'hello baby, i still hate you'
+    })
+
+//by onclick and function 
+    function AnotherEventfun(){
+        document.querySelector('#h2').textContent = 'i sill hate you'
+        document.querySelector('#button').innerText = 'Now you know'
+        document.querySelector('#button').style.backgroundcolor = 'yellow'
+    }
+
+
+</script>
+</body>
+</html>
