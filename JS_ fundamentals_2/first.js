@@ -114,7 +114,7 @@ if (!user){
 cal("sumannn");
 
 //task 4 
-let products = [
+let products1 = [
     {name: "laptop", price: "120000"},
     {name: "mobile", price: "70000"},
     {name: "laptop bag", price: "20000"},
@@ -125,7 +125,7 @@ let products = [
 let max = { name: "", price: 0 };
 let min = { name: "", price: Number.MAX_VALUE};
 
-for(item of products){
+for(item of products1){
     let priceNumber = parseInt(item.price); // Convert string to number
 
     if(priceNumber < min.price){
